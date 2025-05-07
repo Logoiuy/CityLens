@@ -1,0 +1,19 @@
+Rostock: 54.08840153011044, 12.128843937794484
+Gebäude: 	https://geo.sv.rostock.de/rostock3d/datasource-data/6dc490d3-7931-4bb0-981b-5036d003539d/tileset.json
+Statuen: 	https://geo.sv.rostock.de/rostock3d/datasource-data/1c65d5d8-cbcf-4c1e-a7e9-6afc07a0324a/tileset.json
+Liegeplätze:https://geo.sv.rostock.de/rostock3d/datasource-data/aa6547c3-386e-48d2-801a-3c98638e256e/tileset.json
+Brücken: 	https://geo.sv.rostock.de/rostock3d/datasource-data/92dd8283-0842-40df-9ace-cba774df73f5/tileset.json
+Brücken kA?:https://geo.sv.rostock.de/rostock3d/datasource-data/b9e6a5ec-c128-4cec-b8be-f72399a84466/tileset.json
+Stadtmauer: https://geo.sv.rostock.de/rostock3d/datasource-data/7edaf9b8-9011-4bbc-a11b-dfe19570d6f1/tileset.json
+Hafenkräne: https://geo.sv.rostock.de/rostock3d/datasource-data/fa9cc39a-3112-48ac-ada2-f3cb3f50228b/tileset.json
+Poller: 	https://geo.sv.rostock.de/rostock3d/datasource-data/3b20d222-66e7-4b92-ba9e-b293ea292722/tileset.json
+CruisCenter:https://geo.sv.rostock.de/rostock3d/datasource-data/5f423b63-6016-48f2-8909-212bd15723e4/tileset.json
+Brückenzaun:https://geo.sv.rostock.de/rostock3d/datasource-data/5dec40ae-c964-4650-b33b-3a5c64b05617/tileset.json
+
+inkompatible moderne Kunst: 
+https://geo.sv.rostock.de/rostock3d/datasource-data/16d1c974-90ef-4fea-860f-55013a76222d/tileset.json
+- No loader registered for tile with magic value 'vctr'
+
+inkompatible Rettunsringe: 
+https://geo.sv.rostock.de/rostock3d/datasource-data/ffa4d759-22dd-4342-a030-75f623e94ef8/tileset.json
+- Invalid Batch ID Semantic
