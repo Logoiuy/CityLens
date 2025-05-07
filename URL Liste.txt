@@ -17,3 +17,6 @@ https://geo.sv.rostock.de/rostock3d/datasource-data/16d1c974-90ef-4fea-860f-5501
 inkompatible Rettunsringe: 
 https://geo.sv.rostock.de/rostock3d/datasource-data/ffa4d759-22dd-4342-a030-75f623e94ef8/tileset.json
 - Invalid Batch ID Semantic
+
+texturierte Gebäude:
+https://geo.sv.rostock.de/rostock3d/datasource-data/c667cb38-3776-4208-8746-16a8b11c8e5f/tileset.json
