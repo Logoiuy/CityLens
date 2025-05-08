@@ -14,3 +14,4 @@ Saved
 *.xcworkspace
 .vsconfig/*
 .vsconfig
+cesium-request-cache*

@@ -1,0 +1,25 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+    "VersionName": "1.0",
+  "EngineVersion":  "5.3",
+  "FriendlyName": "Android Native",
+  "Description": "Advanced interaction with Android device.",
+  "Category": "Code Plugins",
+  "CreatedBy": "Georgy Treshchev",
+  "CreatedByURL": "https://georgy.dev/",
+  "DocsURL": "https://docs.georgy.dev/android-native/overview",
+  "SupportURL": "https://georgy.dev/",
+  "CanContainContent": false,
+  "IsBetaVersion": false,
+  "IsExperimentalVersion": false,
+  "Installed": true,
+  "RequiresBuildPlatform": true,
+  "Modules": [
+    {
+      "Name": "AndroidNative",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ]
+}
