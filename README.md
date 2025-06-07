@@ -13,3 +13,10 @@ In order to open:
 	- .NET CORE 3.1
 - delete Intermediate, Binaries, Saved und DerivedDataCache
 - hope it works
+
+In order to build for android:
+
+- download Android Studio Flamingo | 2022.2.1 Patch 2 24. Mai 2023 
+- follow the steps in the [Unreal Engine documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-android-sdk-and-ndk-for-unreal?application_version=4.27) (probably skip step 3.9)
+- add SDK 33 in SDK Manager
+- Warning: First build may take a very long time
