@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class ARTest4 : ModuleRules
+public class CityLens : ModuleRules
 {
-	public ARTest4(ReadOnlyTargetRules Target) : base(Target)
+	public CityLens(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	

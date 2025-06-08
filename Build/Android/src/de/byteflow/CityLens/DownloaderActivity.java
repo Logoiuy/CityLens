@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.YourCompany.ARTest4;
+package de.byteflow.CityLens;
 
 import com.android.vending.expansion.zipfile.ZipResourceFile;
 import com.android.vending.expansion.zipfile.ZipResourceFile.ZipEntryRO;

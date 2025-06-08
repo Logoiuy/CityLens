@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class ARTest4EditorTarget : TargetRules
+public class CityLensEditorTarget : TargetRules
 {
-	public ARTest4EditorTarget(TargetInfo Target) : base(Target)
+	public CityLensEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V4;
 
-		ExtraModuleNames.AddRange( new string[] { "ARTest4" } );
+		ExtraModuleNames.AddRange( new string[] { "CityLens" } );
 	}
 }

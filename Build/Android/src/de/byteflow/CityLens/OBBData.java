@@ -1,4 +1,4 @@
-package com.YourCompany.ARTest4;
+package de.byteflow.CityLens;
 
 public class OBBData
 {
@@ -19,7 +19,7 @@ public static final XAPKFile[] xAPKS = {
 new XAPKFile(
 true, // true signifies a main file
 "1", // the version of the APK that the file was uploaded against
-33374369L // the length of the file in bytes
+37365316L // the length of the file in bytes
 )
 };
 };
