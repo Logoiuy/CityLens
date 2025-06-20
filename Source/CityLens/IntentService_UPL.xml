@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+  <init>
+    <log text="IntentService additions rev2 init"/>
+  </init>
+
+  <gameActivityOnCreateAdditions>
+    <insert>
+        handleIntent(getIntent());
+    </insert>
+  </gameActivityOnCreateAdditions>
+
+  <gameActivityOnNewIntentAdditions>
+    <insert>
+        handleIntent(getIntent());
+    </insert>
+  </gameActivityOnNewIntentAdditions>
+  
+  <gameActivityClassAdditions>
+    <insert>
+        private static String fullUrl = "";
+
+        private void handleIntent(Intent intent) {
+        Uri data = intent.getData();
+        if (data != null) {
+            fullUrl = data.toString(); 
+        }
+    }
+
+    public native void nativeSendUriToUnreal(String uri);
+    public static String getIntentData(){
+        return fullUrl;
+    }
+    </insert>
+  </gameActivityClassAdditions>
+</root>
