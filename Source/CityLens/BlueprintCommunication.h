@@ -16,6 +16,8 @@ public:
 	ABlueprintCommunication();
 	UFUNCTION(BlueprintCallable, Category = "#Log")
 	void myLog();
+	/*UFUNCTION(BlueprintCallable, Category = "#DoubleGeo")
+	void setGeoreference(double x, double y, double z);*/
 	UFUNCTION(BlueprintImplementableEvent, Category = "#Log")
 	void CalledFromCpp(int value);
 

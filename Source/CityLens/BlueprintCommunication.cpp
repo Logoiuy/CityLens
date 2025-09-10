@@ -2,6 +2,7 @@
 
 
 #include "BlueprintCommunication.h"
+#include "C:/Program Files/Epic Games/UE_5.3/Engine/Plugins/Marketplace/CesiumForUnreal_5.3/Source/CesiumRuntime/Public/CesiumGeoreference.h"
 
 // Sets default values
 ABlueprintCommunication::ABlueprintCommunication()
@@ -22,6 +23,11 @@ void ABlueprintCommunication::myLog() {
 	UE_LOG(LogTemp, Display, TEXT("Hello World, it seems a Blueprint can call a cpp function!"));
 	CalledFromCpp(80);
 }
+//void ABlueprintCommunication::setGeoreference(double x, double y, double z) {
+//	SetOriginLongitude(x);
+//	SetOriginLatitude(y);
+//	SetOriginHeight(z);
+//}
 
 // Called every frame
 void ABlueprintCommunication::Tick(float DeltaTime)
