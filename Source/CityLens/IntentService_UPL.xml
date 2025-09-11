@@ -3,7 +3,11 @@
   <init>
     <log text="IntentService additions rev2 init"/>
   </init>
-
+  <gameActivityImportAdditions>
+    <insert>
+      import android.util.Log;
+    </insert>
+  </gameActivityImportAdditions>
   <gameActivityOnCreateAdditions>
     <insert>
         handleIntent(getIntent());
@@ -21,10 +25,13 @@
         private static String fullUrl = "";
 
         private void handleIntent(Intent intent) {
-        Uri data = intent.getData();
-        if (data != null) {
-            fullUrl = data.toString(); 
-        }
+          Log.debug("Handle Intent executet!");
+          Uri data = intent.getData();
+          if (data != null) {
+              Log.debug(data.toString());
+              fullUrl = data.toString(); 
+              Log.debug(fullUrl);
+          }
     }
 
     public native void nativeSendUriToUnreal(String uri);

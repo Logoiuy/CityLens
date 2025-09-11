@@ -2,7 +2,6 @@
 
 
 #include "BlueprintCommunication.h"
-#include "C:/Program Files/Epic Games/UE_5.3/Engine/Plugins/Marketplace/CesiumForUnreal_5.3/Source/CesiumRuntime/Public/CesiumGeoreference.h"
 
 // Sets default values
 ABlueprintCommunication::ABlueprintCommunication()
