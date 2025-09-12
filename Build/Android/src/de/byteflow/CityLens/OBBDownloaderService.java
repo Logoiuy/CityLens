@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.YourCompany.ARTest4;
+package de.byteflow.CityLens;
 
 import com.google.android.vending.expansion.downloader.impl.DownloaderService;
 
@@ -61,6 +61,6 @@ public class OBBDownloaderService extends DownloaderService {
      */
     @Override
     public String getAlarmReceiverClassName() {
-        return com.YourCompany.ARTest4.AlarmReceiver.class.getName();
+        return de.byteflow.CityLens.AlarmReceiver.class.getName();
     }
 }

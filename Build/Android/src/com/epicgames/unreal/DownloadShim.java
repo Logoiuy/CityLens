@@ -1,10 +1,10 @@
 package com.epicgames.unreal;
 
-import com.YourCompany.ARTest4.OBBDownloaderService;
-import com.YourCompany.ARTest4.DownloaderActivity;
+import de.byteflow.CityLens.OBBDownloaderService;
+import de.byteflow.CityLens.DownloaderActivity;
 import android.app.Activity;
 import com.google.android.vending.expansion.downloader.Helpers;
-import com.YourCompany.ARTest4.OBBData;
+import de.byteflow.CityLens.OBBData;
 
 
 public class DownloadShim

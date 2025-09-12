@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+  <init>
+    <log text="IntentService additions rev2 init"/>
+  </init>
+  <gameActivityImportAdditions>
+    <insert>
+      import android.util.Log;
+    </insert>
+  </gameActivityImportAdditions>
+  <gameActivityOnCreateAdditions>
+    <insert>
+        handleIntent(getIntent());
+    </insert>
+  </gameActivityOnCreateAdditions>
+
+  <gameActivityOnNewIntentAdditions>
+    <insert>
+        handleIntent(getIntent());
+    </insert>
+  </gameActivityOnNewIntentAdditions>
+  
+  <gameActivityClassAdditions>
+    <insert>
+        private static String fullUrl = "";
+
+        private void handleIntent(Intent intent) {
+          Log.debug("Handle Intent executet!");
+          Uri data = intent.getData();
+          if (data != null) {
+              Log.debug(data.toString());
+              fullUrl = data.toString(); 
+              Log.debug(fullUrl);
+          }
+    }
+
+    public native void nativeSendUriToUnreal(String uri);
+    public static String getIntentData(){
+        return fullUrl;
+    }
+    </insert>
+  </gameActivityClassAdditions>
+</root>

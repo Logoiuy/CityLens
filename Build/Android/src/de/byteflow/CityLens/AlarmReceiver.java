@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.YourCompany.ARTest4;
+package de.byteflow.CityLens;
 
 import com.google.android.vending.expansion.downloader.DownloaderClientMarshaller;
 

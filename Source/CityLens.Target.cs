@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class ARTest4Target : TargetRules
+public class CityLensTarget : TargetRules
 {
-	public ARTest4Target(TargetInfo Target) : base(Target)
+	public CityLensTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V4;
 
-		ExtraModuleNames.AddRange( new string[] { "ARTest4" } );
+		ExtraModuleNames.AddRange( new string[] { "CityLens" } );
 	}
 }

@@ -1,0 +1,42 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "JavaCommunication.generated.h"
+
+#if PLATFORM_ANDROID
+#include "AndroidPlatform.h"
+#include "Android/AndroidApplication.h"
+#include "Android/AndroidJNI.h"
+#include "Android/AndroidJava.h"
+#include "Android/Application.h"
+
+#include <android/log.h>
+
+#define LOG_TAG "CameraLOG"
+
+int jniValue = 0;
+JNIEnv* javaEnvironment = NULL;
+static jmethodID AndroidThunkJava_GetMessage;
+#endif
+
+UCLASS()
+class CITYLENS_API AJavaCommunication : public AActor
+{
+	GENERATED_BODY()
+	
+public:	
+	// Sets default values for this actor's properties
+	AJavaCommunication();
+
+	int initEnvironment();
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+};
+
+
