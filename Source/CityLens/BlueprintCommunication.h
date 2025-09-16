@@ -18,6 +18,9 @@ public:
 	void myLog();
 	/*UFUNCTION(BlueprintCallable, Category = "#DoubleGeo")
 	void setGeoreference(double x, double y, double z);*/
+	UFUNCTION(BlueprintCallable, Category = "#QR")
+	FString readQR();
+
 	UFUNCTION(BlueprintImplementableEvent, Category = "#Log")
 	void CalledFromCpp(int value);
 

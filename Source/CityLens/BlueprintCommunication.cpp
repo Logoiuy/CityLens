@@ -2,6 +2,7 @@
 
 
 #include "BlueprintCommunication.h"
+#include "Misc/FileHelper.h"
 
 // Sets default values
 ABlueprintCommunication::ABlueprintCommunication()
@@ -21,6 +22,21 @@ void ABlueprintCommunication::myLog() {
 	// Your code
 	UE_LOG(LogTemp, Display, TEXT("Hello World, it seems a Blueprint can call a cpp function!"));
 	CalledFromCpp(80);
+}
+FString ABlueprintCommunication::readQR() {
+	FString file = "/storage/emulated/0/Android/data/de.byteflow.CityLens/files/qrcontent.txt";
+	FString FileContent;
+	if (FFileHelper::LoadFileToString(FileContent, *file, FFileHelper::EHashOptions::None))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("FileManipulation: Text From File: %s"), *FileContent);
+		return FileContent;
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("FileManipulation: Did not load text from file"));
+		return "uff";
+	}
+
 }
 //void ABlueprintCommunication::setGeoreference(double x, double y, double z) {
 //	SetOriginLongitude(x);
