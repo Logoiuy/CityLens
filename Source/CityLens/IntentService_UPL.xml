@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root xmlns:android="http://schemas.android.com/apk/res/android">
   <init>
-    <log text="IntentService additions rev2 init"/>
+    <log text="IntentService additions rev3.5 init"/>
   </init>
   <gameActivityImportAdditions>
     <insert>
       import android.util.Log;
+      import java.io.File;
+      import java.io.FileWriter;     
+      import java.io.IOException;
     </insert>
   </gameActivityImportAdditions>
   <gameActivityOnCreateAdditions>
@@ -31,6 +34,30 @@
               Log.debug(data.toString());
               fullUrl = data.toString(); 
               Log.debug(fullUrl);
+              try {
+                Log.debug(getFilesDir().toString() + ": somthg executet");
+                Log.debug(getExternalFilesDir(null).toString() + ": somthg executet, but externally. hehe (and yes I am misspelling executed on pupose, as to find the logs more easily.)");
+                //File file = new File(getFilesDir().toString() + "/QRContent.txt");
+                //FileWriter myWriter = new FileWriter(file);
+                //myWriter.write(fullUrl);
+                //myWriter.close();  // must close manually
+                //FileOutputStream fos = openFileOutput("QRContent.txt", MODE_PRIVATE);
+                //fos.write(fullUrl.getBytes("UTF-8"));
+	              //fos.close();
+                //OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("qrcontent.txt", MODE_PRIVATE));
+                //outputStreamWriter.write(fullUrl);
+                //outputStreamWriter.close();
+
+                File externalFile = new File(getExternalFilesDir(null), "qrcontent.txt");
+                FileWriter writer = new FileWriter(externalFile);
+                writer.write(fullUrl);
+                writer.close();
+
+                Log.debug("Successfully wrote to the file.");
+              }catch (IOException e) {
+                Log.debug("An error occurred.");
+                e.printStackTrace();
+              }
           }
     }
 
