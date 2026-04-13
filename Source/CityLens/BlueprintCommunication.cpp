@@ -26,9 +26,11 @@ void ABlueprintCommunication::myLog() {
 FString ABlueprintCommunication::readQR() {
 	FString file = "/storage/emulated/0/Android/data/de.byteflow.CityLens/files/qrcontent.txt";
 	FString FileContent;
+	FString empty = "";
 	if (FFileHelper::LoadFileToString(FileContent, *file, FFileHelper::EHashOptions::None))
 	{
 		UE_LOG(LogTemp, Warning, TEXT("FileManipulation: Text From File: %s"), *FileContent);
+		FFileHelper::SaveStringToFile(empty, *file);
 		return FileContent;
 	}
 	else
